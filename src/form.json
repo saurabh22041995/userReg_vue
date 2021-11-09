@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "firstName": "saurabh",
+        "lastName": "bhadauria",
+        "companyName": "Coforge",
+        "designation": "SSE",
+        "mobileNumber": "9876543212",
+        "Address": "Greater Noida"
+    },
+    {
+        "id": 2,
+        "firstName": "priyanka",
+        "lastName": "yadav",
+        "companyName": "Coforge",
+        "designation": "SSE",
+        "mobileNumber": "9876543212",
+        "Address": "Greater Noida"
+    },
+    {
+        "id": 3,
+        "firstName": "pravat",
+        "lastName": "roy",
+        "companyName": "Coforge",
+        "designation": "manager",
+        "mobileNumber": "9876543212",
+        "Address": "Greater Noida"
+    },
+    {
+        "id": 4,
+        "firstName": "rishi",
+        "lastName": "kumar",
+        "companyName": "Coforge",
+        "designation": "specialist",
+        "mobileNumber": "9876543212",
+        "Address": "Greater Noida"
+    }
+]
