@@ -6,7 +6,9 @@
         "companyName": "Coforge",
         "designation": "SSE",
         "mobileNumber": "9876543212",
-        "Address": "Greater Noida"
+        "Address": "Greater Noida",
+        "gender": "Male",
+        "dob": "2022-02-22"
     },
     {
         "id": 2,
@@ -15,7 +17,9 @@
         "companyName": "Coforge",
         "designation": "SSE",
         "mobileNumber": "9876543212",
-        "Address": "Greater Noida"
+        "Address": "Greater Noida",
+        "gender": "Female",
+        "dob": "2022-02-22"
     },
     {
         "id": 3,
@@ -24,7 +28,9 @@
         "companyName": "Coforge",
         "designation": "manager",
         "mobileNumber": "9876543212",
-        "Address": "Greater Noida"
+        "Address": "Greater Noida",
+        "gender": "Male",
+        "dob": "2022-02-22"
     },
     {
         "id": 4,
@@ -33,6 +39,8 @@
         "companyName": "Coforge",
         "designation": "specialist",
         "mobileNumber": "9876543212",
-        "Address": "Greater Noida"
+        "Address": "Greater Noida",
+        "gender": "Male",
+        "dob": "2022-02-22"
     }
 ]

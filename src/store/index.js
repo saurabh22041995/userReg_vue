@@ -1,5 +1,6 @@
 import { createStore } from 'vuex'
 import { SetItem, GetItem, FormValidation } from '../Common/helperFunc'
+import moment from 'moment'
 
 export default createStore({
   state: {
@@ -11,7 +12,9 @@ export default createStore({
       companyName: '',
       designation: '',
       mobileNumber: '',
-      Address: ''
+      Address: '',
+      dob: '',
+      gender: ''
     },
     isEdit: false,
     isValid: false,
@@ -32,6 +35,9 @@ export default createStore({
     },
     handleChange: (state, event) => {
       state.formData[event.name] = event.value
+      if (event.name === 'dob') {
+        state.formData[event.name] = moment(event.value).format('YYYY-MM-DD')
+      }
     },
     addFormData: (state, e) => {
       e.preventDefault()

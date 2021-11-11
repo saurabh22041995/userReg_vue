@@ -54,6 +54,15 @@ body{
         margin: 15px;
         @include button()
     }
+    h1{
+        background: darkcyan;
+        color: white;
+        margin: 15px;
+        margin-top: 0px;
+        padding: 10px;
+        border-radius: 1rem;
+        text-transform: uppercase;
+    }
 }
 
 
@@ -106,6 +115,15 @@ form{
         input{
             @include input-form();
             width: 39%;
+        }
+        select{
+            @include input-form();
+            width: 42%;
+            &:valid{
+                background: white;
+                border-radius: 5px;
+                border-width: 3px;
+            }
         }
     }
     

@@ -1,9 +1,10 @@
 <template>
   <div class="home">
+    <h1 v-if="!showAddUserState">Registered Users</h1>
     <button @click="showAddUser" v-if="!showAddUserState">
       Add User
     </button>
-    <Table :allDetails="formDetails" :showAddUserState="showAddUserState" :deleteDetail="deleteDetail" :editDetail="editDetail"/>
+    <Table :allDetails="formDetails" :showAddUserState="showAddUserState" :editDetail="editDetail" :confirmDelete="confirmDelete"/>
     <Form :showAddUserState="showAddUserState" :showAddUser="showAddUser" :formData="formData" :handleChange="handleChange" :addFormData="addFormData" :isEdit="isEdit" :editFormData="editFormData" :isValid="isValid" :isMob="isMob"/>
   </div>
 </template>
@@ -28,6 +29,11 @@ export default {
     },
     addFormData (e) {
       this.$store.commit('addFormData', e)
+    },
+    confirmDelete (id) {
+      if (confirm('Do you really want to delete!')) {
+        this.$store.commit('deleteDetail', id)
+      }
     }
   },
   computed: {

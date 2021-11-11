@@ -1,6 +1,6 @@
 <template>
     <div v-if="showAddUserState" class="Reg-container">
-        <h1 class="Reg-form">Registraion Form</h1>
+        <h1 class="Reg-form">Registration Form</h1>
         <div class="form-main">
             <form>
                 <div>
@@ -12,6 +12,14 @@
                 <div class="form-input">
                     <input type="text" placeholder="First Name" name="firstName" :value="formData.firstName" @input="handleChange" required/>
                     <input type="text" placeholder="Last Name" name="lastName" :value="formData.lastName" @input="handleChange" required/>
+                </div>
+                <div class="form-input">
+                    <select name="gender" :value="formData.gender" @input="handleChange" required>
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <input type="date" name="dob" :value="formData.dob" @input="handleChange" required/>
                 </div>
                 <div class="form-input-2">
                     <input type="text" placeholder="Company Name" name="companyName" :value="formData.companyName" @input="handleChange" required/>
