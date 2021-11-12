@@ -14,7 +14,7 @@
             <tr v-for="detail in allDetails" :key="detail.id">
                 <td>{{ detail.firstName + " " + detail.lastName }}</td>
                 <td>{{ detail.gender }}</td>
-                <td>{{ detail.dob }}</td>
+                <td>{{ dateFormat(detail.dob) }}</td>
                 <td>{{ detail.companyName }}</td>
                 <td>{{ detail.designation }}</td>
                 <td>{{ detail.mobileNumber }}</td>
@@ -29,8 +29,14 @@
 </template>
 
 <script>
+import moment from 'moment'
 
 export default {
-  props: ['allDetails', 'showAddUserState', 'editDetail', 'confirmDelete']
+  props: ['allDetails', 'showAddUserState', 'editDetail', 'confirmDelete'],
+  methods: {
+    dateFormat: (date) => {
+      return moment(date).format('DD, MMM YYYY')
+    }
+  }
 }
 </script>
